@@ -4,13 +4,13 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyA5HqcE0Cg-7rdUg0bJQ0pe5yeV6zkRA9Q",
-  authDomain: "webrtc-1b213.firebaseapp.com",
-  projectId: "webrtc-1b213",
-  storageBucket: "webrtc-1b213.firebasestorage.app",
-  messagingSenderId: "132729659091",
-  appId: "1:132729659091:web:0e79d885f6188e14097e26",
-  measurementId: "G-JFRBDYBDQL"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 if (!firebase.apps.length) {
